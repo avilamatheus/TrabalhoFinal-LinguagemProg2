@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>principal</class>
+ <widget class="QMainWindow" name="principal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>359</width>
+    <height>332</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>principal</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>imgs/logo.png</normaloff>imgs/logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="btn_venda">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>200</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Nova Venda</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>321</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="btn_logar">
+       <property name="text">
+        <string>Logar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="txt_nome">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="logo">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>181</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>359</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGest_o">
+    <property name="title">
+     <string>Produtos</string>
+    </property>
+    <addaction name="actionAdicionar_Novo_Produto"/>
+    <addaction name="actionGerenciar_Produtos"/>
+   </widget>
+   <widget class="QMenu" name="menuClientes">
+    <property name="title">
+     <string>Clientes</string>
+    </property>
+    <addaction name="actionAdicionar_Cliente"/>
+    <addaction name="actionGerenciar_Clientes"/>
+   </widget>
+   <widget class="QMenu" name="menuVendas">
+    <property name="title">
+     <string>Vendas</string>
+    </property>
+    <addaction name="actionGest_o_Vendas"/>
+    <addaction name="actionVendas_por_Cliente"/>
+   </widget>
+   <widget class="QMenu" name="menuAdministradores">
+    <property name="title">
+     <string>Administradores</string>
+    </property>
+    <addaction name="actionAdicionar_Novo_Admin"/>
+    <addaction name="actionGerenciar_Administradores"/>
+   </widget>
+   <addaction name="menuGest_o"/>
+   <addaction name="menuClientes"/>
+   <addaction name="menuVendas"/>
+   <addaction name="menuAdministradores"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSobre">
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="actionAdicionar_Novo_Produto">
+   <property name="text">
+    <string>Adicionar Novo Produto</string>
+   </property>
+  </action>
+  <action name="actionGerenciar_Produtos">
+   <property name="text">
+    <string>Gerenciar Produtos</string>
+   </property>
+  </action>
+  <action name="actionAdicionar_Cliente">
+   <property name="text">
+    <string>Adicionar Cliente</string>
+   </property>
+  </action>
+  <action name="actionGerenciar_Clientes">
+   <property name="text">
+    <string>Gerenciar Clientes</string>
+   </property>
+  </action>
+  <action name="actionGest_o_Vendas">
+   <property name="text">
+    <string>Histórico de Vendas</string>
+   </property>
+  </action>
+  <action name="actionVendas_por_Cliente">
+   <property name="text">
+    <string>Vendas por Cliente</string>
+   </property>
+  </action>
+  <action name="actionGerenciar_Administradores">
+   <property name="text">
+    <string>Gerenciar Admins</string>
+   </property>
+  </action>
+  <action name="actionAdicionar_Novo_Admin">
+   <property name="text">
+    <string>Adicionar Novo Admin</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
